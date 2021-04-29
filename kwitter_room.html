@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Chat</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+	<br>
+<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger"> Logout</button>
+	<center>
+		<h1 class="header">	
+			Web Chat    
+			<sup>
+				<img src="icon.png">
+			</sup>
+		</h1>
+		<h3 id="user_name" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<br>
+			<label class="color_white"> Add Room: </label>
+			<input type="text" id="room_name" class="form-control" placeholder="Room Name">
+		</div>
+		<button onclick="addRoom();" class="btn btn-primary"> Add Room </button>
+		<br>
+		<br>
+		<br>
+		<h3 class="color_white"> Trending Rooms </h3>
+		<div id="output"></div>
+		<br>
+		<br>
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
